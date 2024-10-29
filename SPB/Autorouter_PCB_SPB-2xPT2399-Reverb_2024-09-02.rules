@@ -1,0 +1,1664 @@
+
+(rules PCB Autorouter_PCB_SPB-2xPT2399-Reverb_2024-09-02
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2879)
+    (layer_rule 1
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.7)
+    )
+    (layer_rule 2
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 1.004)
+    (clearance 0.604)
+    (clearance 0.502 (type smd_to_turn_gap))
+    (clearance 0.604 (type smd))
+    (clearance 0.598 (type A.VCC))
+    (clearance 0.598 (type "R4_1"))
+    (clearance 0.598 (type A.GND))
+    (clearance 0.598 (type "-12V"))
+    (clearance 0.598 (type "U1_1"))
+    (clearance 0.598 (type "U1_2"))
+    (clearance 0.598 (type "SUB1-IN.L"))
+    (clearance 0.598 (type "BOARD-IN.L"))
+    (clearance 0.598 (type "U1_7"))
+    (clearance 0.598 (type "U1_6"))
+    (clearance 0.598 (type "SUB1-IN.R"))
+    (clearance 0.598 (type "BOARD-IN.R"))
+    (clearance 0.598 (type "REVERB-IN.R"))
+    (clearance 0.598 (type "REVERB-IN.L"))
+    (clearance 0.598 (type "REVERB-OUT.R"))
+    (clearance 0.598 (type "REVERB-OUT.L"))
+    (clearance 0.598 (type "VR1-IN.L"))
+    (clearance 0.598 (type GND))
+    (clearance 0.598 (type "VR1-IN.R"))
+    (clearance 0.598 (type "VR2-IN.L"))
+    (clearance 0.598 (type "VR2-M.L"))
+    (clearance 0.598 (type "VR2-M.R"))
+    (clearance 0.598 (type "VR2-IN.R"))
+    (clearance 0.598 (type "A.VCC_IN"))
+    (clearance 0.598 (type "+12V_IN"))
+    (clearance 0.598 (type "-12V_IN"))
+    (clearance 0.598 (type +12V))
+    (clearance 0.598 (type "R1_1"))
+    (clearance 0.598 (type "R2_1"))
+    (clearance 0.598 (type "R3_1"))
+    (clearance 0.598 (type "C6_2"))
+    (clearance 0.598 (type "R12_1"))
+    (clearance 0.598 (type "R14_1"))
+    (clearance 0.598 (type "R13_1"))
+    (clearance 0.598 (type "C8_1"))
+    (clearance 0.598 (type "R15_2"))
+    (clearance 0.598 (type "C17_1"))
+    (clearance 0.598 (type "R16_2"))
+    (clearance 0.598 (type "R21_1"))
+    (clearance 0.598 (type "C17_2"))
+    (clearance 0.598 (type "R21_2"))
+    (clearance 0.598 (type "C13_1"))
+    (clearance 0.598 (type "R23_2"))
+    (clearance 0.598 (type "C20_2"))
+    (clearance 0.598 (type "C15_1"))
+    (clearance 0.598 (type "R26_1"))
+    (clearance 0.598 (type "R29_2"))
+    (clearance 0.598 (type "R28_2"))
+    (clearance 0.598 (type "C20_1"))
+    (clearance 0.598 (type "R28_1"))
+    (clearance 0.598 (type "C26_1"))
+    (clearance 0.598 (type "R30_1"))
+    (clearance 0.598 (type "R31_2"))
+    (clearance 0.598 (type "R32_2"))
+    (clearance 0.598 (type "U2_2"))
+    (clearance 0.598 (type "U2_7"))
+    (clearance 0.598 (type "U2_8"))
+    (clearance 0.598 (type "C26_2"))
+    (clearance 0.598 (type "C28_1"))
+    (clearance 0.598 (type "C28_2"))
+    (clearance 0.598 (type "U3_2"))
+    (clearance 0.598 (type "U3_7"))
+    (clearance 0.598 (type "U3_8"))
+    (clearance 0.598 (type "C27_2"))
+    (clearance 0.598 (type "C29_1"))
+    (clearance 0.598 (type "C29_2"))
+  )
+  (padstack via0
+    (shape
+      (circle 1 2.402 0.0 0.0)
+    )
+    (shape
+      (circle 2 2.402 0.0 0.0)
+    )
+  )
+  (padstack via1
+    (shape
+      (circle 1 4.724 0.0 0.0)
+    )
+    (shape
+      (circle 2 4.724 0.0 0.0)
+    )
+  )
+  (padstack via2
+    (shape
+      (circle 1 11.938 0.0 0.0)
+    )
+    (shape
+      (circle 2 11.938 0.0 0.0)
+    )
+  )
+  (via 
+    via0 via0 default
+  )
+  (via 
+    via1 via1 default
+  )
+  (via 
+    via2 via2 default
+  )
+  (via 
+    "via0-A.VCC" via0 A.VCC
+  )
+  (via 
+    "via1-A.VCC" via1 A.VCC
+  )
+  (via 
+    "via2-A.VCC" via2 A.VCC
+  )
+  (via 
+    "via0-R4_1" via0 "R4_1"
+  )
+  (via 
+    "via1-R4_1" via1 "R4_1"
+  )
+  (via 
+    "via2-R4_1" via2 "R4_1"
+  )
+  (via 
+    "via0-A.GND" via0 A.GND
+  )
+  (via 
+    "via1-A.GND" via1 A.GND
+  )
+  (via 
+    "via2-A.GND" via2 A.GND
+  )
+  (via 
+    "via0--12V" via0 "-12V"
+  )
+  (via 
+    "via1--12V" via1 "-12V"
+  )
+  (via 
+    "via2--12V" via2 "-12V"
+  )
+  (via 
+    "via0-U1_1" via0 "U1_1"
+  )
+  (via 
+    "via1-U1_1" via1 "U1_1"
+  )
+  (via 
+    "via2-U1_1" via2 "U1_1"
+  )
+  (via 
+    "via0-U1_2" via0 "U1_2"
+  )
+  (via 
+    "via1-U1_2" via1 "U1_2"
+  )
+  (via 
+    "via2-U1_2" via2 "U1_2"
+  )
+  (via 
+    "via0-SUB1-IN.L" via0 "SUB1-IN.L"
+  )
+  (via 
+    "via1-SUB1-IN.L" via1 "SUB1-IN.L"
+  )
+  (via 
+    "via2-SUB1-IN.L" via2 "SUB1-IN.L"
+  )
+  (via 
+    "via0-BOARD-IN.L" via0 "BOARD-IN.L"
+  )
+  (via 
+    "via1-BOARD-IN.L" via1 "BOARD-IN.L"
+  )
+  (via 
+    "via2-BOARD-IN.L" via2 "BOARD-IN.L"
+  )
+  (via 
+    "via0-U1_7" via0 "U1_7"
+  )
+  (via 
+    "via1-U1_7" via1 "U1_7"
+  )
+  (via 
+    "via2-U1_7" via2 "U1_7"
+  )
+  (via 
+    "via0-U1_6" via0 "U1_6"
+  )
+  (via 
+    "via1-U1_6" via1 "U1_6"
+  )
+  (via 
+    "via2-U1_6" via2 "U1_6"
+  )
+  (via 
+    "via0-SUB1-IN.R" via0 "SUB1-IN.R"
+  )
+  (via 
+    "via1-SUB1-IN.R" via1 "SUB1-IN.R"
+  )
+  (via 
+    "via2-SUB1-IN.R" via2 "SUB1-IN.R"
+  )
+  (via 
+    "via0-BOARD-IN.R" via0 "BOARD-IN.R"
+  )
+  (via 
+    "via1-BOARD-IN.R" via1 "BOARD-IN.R"
+  )
+  (via 
+    "via2-BOARD-IN.R" via2 "BOARD-IN.R"
+  )
+  (via 
+    "via0-REVERB-IN.R" via0 "REVERB-IN.R"
+  )
+  (via 
+    "via1-REVERB-IN.R" via1 "REVERB-IN.R"
+  )
+  (via 
+    "via2-REVERB-IN.R" via2 "REVERB-IN.R"
+  )
+  (via 
+    "via0-REVERB-IN.L" via0 "REVERB-IN.L"
+  )
+  (via 
+    "via1-REVERB-IN.L" via1 "REVERB-IN.L"
+  )
+  (via 
+    "via2-REVERB-IN.L" via2 "REVERB-IN.L"
+  )
+  (via 
+    "via0-REVERB-OUT.R" via0 "REVERB-OUT.R"
+  )
+  (via 
+    "via1-REVERB-OUT.R" via1 "REVERB-OUT.R"
+  )
+  (via 
+    "via2-REVERB-OUT.R" via2 "REVERB-OUT.R"
+  )
+  (via 
+    "via0-REVERB-OUT.L" via0 "REVERB-OUT.L"
+  )
+  (via 
+    "via1-REVERB-OUT.L" via1 "REVERB-OUT.L"
+  )
+  (via 
+    "via2-REVERB-OUT.L" via2 "REVERB-OUT.L"
+  )
+  (via 
+    "via0-VR1-IN.L" via0 "VR1-IN.L"
+  )
+  (via 
+    "via1-VR1-IN.L" via1 "VR1-IN.L"
+  )
+  (via 
+    "via2-VR1-IN.L" via2 "VR1-IN.L"
+  )
+  (via 
+    "via0-GND" via0 GND
+  )
+  (via 
+    "via1-GND" via1 GND
+  )
+  (via 
+    "via2-GND" via2 GND
+  )
+  (via 
+    "via0-VR1-IN.R" via0 "VR1-IN.R"
+  )
+  (via 
+    "via1-VR1-IN.R" via1 "VR1-IN.R"
+  )
+  (via 
+    "via2-VR1-IN.R" via2 "VR1-IN.R"
+  )
+  (via 
+    "via0-VR2-IN.L" via0 "VR2-IN.L"
+  )
+  (via 
+    "via1-VR2-IN.L" via1 "VR2-IN.L"
+  )
+  (via 
+    "via2-VR2-IN.L" via2 "VR2-IN.L"
+  )
+  (via 
+    "via0-VR2-M.L" via0 "VR2-M.L"
+  )
+  (via 
+    "via1-VR2-M.L" via1 "VR2-M.L"
+  )
+  (via 
+    "via2-VR2-M.L" via2 "VR2-M.L"
+  )
+  (via 
+    "via0-VR2-M.R" via0 "VR2-M.R"
+  )
+  (via 
+    "via1-VR2-M.R" via1 "VR2-M.R"
+  )
+  (via 
+    "via2-VR2-M.R" via2 "VR2-M.R"
+  )
+  (via 
+    "via0-VR2-IN.R" via0 "VR2-IN.R"
+  )
+  (via 
+    "via1-VR2-IN.R" via1 "VR2-IN.R"
+  )
+  (via 
+    "via2-VR2-IN.R" via2 "VR2-IN.R"
+  )
+  (via 
+    "via0-A.VCC_IN" via0 "A.VCC_IN"
+  )
+  (via 
+    "via1-A.VCC_IN" via1 "A.VCC_IN"
+  )
+  (via 
+    "via2-A.VCC_IN" via2 "A.VCC_IN"
+  )
+  (via 
+    "via0-+12V_IN" via0 "+12V_IN"
+  )
+  (via 
+    "via1-+12V_IN" via1 "+12V_IN"
+  )
+  (via 
+    "via2-+12V_IN" via2 "+12V_IN"
+  )
+  (via 
+    "via0--12V_IN" via0 "-12V_IN"
+  )
+  (via 
+    "via1--12V_IN" via1 "-12V_IN"
+  )
+  (via 
+    "via2--12V_IN" via2 "-12V_IN"
+  )
+  (via 
+    "via0-+12V" via0 +12V
+  )
+  (via 
+    "via1-+12V" via1 +12V
+  )
+  (via 
+    "via2-+12V" via2 +12V
+  )
+  (via 
+    "via0-R1_1" via0 "R1_1"
+  )
+  (via 
+    "via1-R1_1" via1 "R1_1"
+  )
+  (via 
+    "via2-R1_1" via2 "R1_1"
+  )
+  (via 
+    "via0-R2_1" via0 "R2_1"
+  )
+  (via 
+    "via1-R2_1" via1 "R2_1"
+  )
+  (via 
+    "via2-R2_1" via2 "R2_1"
+  )
+  (via 
+    "via0-R3_1" via0 "R3_1"
+  )
+  (via 
+    "via1-R3_1" via1 "R3_1"
+  )
+  (via 
+    "via2-R3_1" via2 "R3_1"
+  )
+  (via 
+    "via0-C6_2" via0 "C6_2"
+  )
+  (via 
+    "via1-C6_2" via1 "C6_2"
+  )
+  (via 
+    "via2-C6_2" via2 "C6_2"
+  )
+  (via 
+    "via0-R12_1" via0 "R12_1"
+  )
+  (via 
+    "via1-R12_1" via1 "R12_1"
+  )
+  (via 
+    "via2-R12_1" via2 "R12_1"
+  )
+  (via 
+    "via0-R14_1" via0 "R14_1"
+  )
+  (via 
+    "via1-R14_1" via1 "R14_1"
+  )
+  (via 
+    "via2-R14_1" via2 "R14_1"
+  )
+  (via 
+    "via0-R13_1" via0 "R13_1"
+  )
+  (via 
+    "via1-R13_1" via1 "R13_1"
+  )
+  (via 
+    "via2-R13_1" via2 "R13_1"
+  )
+  (via 
+    "via0-C8_1" via0 "C8_1"
+  )
+  (via 
+    "via1-C8_1" via1 "C8_1"
+  )
+  (via 
+    "via2-C8_1" via2 "C8_1"
+  )
+  (via 
+    "via0-R15_2" via0 "R15_2"
+  )
+  (via 
+    "via1-R15_2" via1 "R15_2"
+  )
+  (via 
+    "via2-R15_2" via2 "R15_2"
+  )
+  (via 
+    "via0-C17_1" via0 "C17_1"
+  )
+  (via 
+    "via1-C17_1" via1 "C17_1"
+  )
+  (via 
+    "via2-C17_1" via2 "C17_1"
+  )
+  (via 
+    "via0-R16_2" via0 "R16_2"
+  )
+  (via 
+    "via1-R16_2" via1 "R16_2"
+  )
+  (via 
+    "via2-R16_2" via2 "R16_2"
+  )
+  (via 
+    "via0-R21_1" via0 "R21_1"
+  )
+  (via 
+    "via1-R21_1" via1 "R21_1"
+  )
+  (via 
+    "via2-R21_1" via2 "R21_1"
+  )
+  (via 
+    "via0-C17_2" via0 "C17_2"
+  )
+  (via 
+    "via1-C17_2" via1 "C17_2"
+  )
+  (via 
+    "via2-C17_2" via2 "C17_2"
+  )
+  (via 
+    "via0-R21_2" via0 "R21_2"
+  )
+  (via 
+    "via1-R21_2" via1 "R21_2"
+  )
+  (via 
+    "via2-R21_2" via2 "R21_2"
+  )
+  (via 
+    "via0-C13_1" via0 "C13_1"
+  )
+  (via 
+    "via1-C13_1" via1 "C13_1"
+  )
+  (via 
+    "via2-C13_1" via2 "C13_1"
+  )
+  (via 
+    "via0-R23_2" via0 "R23_2"
+  )
+  (via 
+    "via1-R23_2" via1 "R23_2"
+  )
+  (via 
+    "via2-R23_2" via2 "R23_2"
+  )
+  (via 
+    "via0-C20_2" via0 "C20_2"
+  )
+  (via 
+    "via1-C20_2" via1 "C20_2"
+  )
+  (via 
+    "via2-C20_2" via2 "C20_2"
+  )
+  (via 
+    "via0-C15_1" via0 "C15_1"
+  )
+  (via 
+    "via1-C15_1" via1 "C15_1"
+  )
+  (via 
+    "via2-C15_1" via2 "C15_1"
+  )
+  (via 
+    "via0-R26_1" via0 "R26_1"
+  )
+  (via 
+    "via1-R26_1" via1 "R26_1"
+  )
+  (via 
+    "via2-R26_1" via2 "R26_1"
+  )
+  (via 
+    "via0-R29_2" via0 "R29_2"
+  )
+  (via 
+    "via1-R29_2" via1 "R29_2"
+  )
+  (via 
+    "via2-R29_2" via2 "R29_2"
+  )
+  (via 
+    "via0-R28_2" via0 "R28_2"
+  )
+  (via 
+    "via1-R28_2" via1 "R28_2"
+  )
+  (via 
+    "via2-R28_2" via2 "R28_2"
+  )
+  (via 
+    "via0-C20_1" via0 "C20_1"
+  )
+  (via 
+    "via1-C20_1" via1 "C20_1"
+  )
+  (via 
+    "via2-C20_1" via2 "C20_1"
+  )
+  (via 
+    "via0-R28_1" via0 "R28_1"
+  )
+  (via 
+    "via1-R28_1" via1 "R28_1"
+  )
+  (via 
+    "via2-R28_1" via2 "R28_1"
+  )
+  (via 
+    "via0-C26_1" via0 "C26_1"
+  )
+  (via 
+    "via1-C26_1" via1 "C26_1"
+  )
+  (via 
+    "via2-C26_1" via2 "C26_1"
+  )
+  (via 
+    "via0-R30_1" via0 "R30_1"
+  )
+  (via 
+    "via1-R30_1" via1 "R30_1"
+  )
+  (via 
+    "via2-R30_1" via2 "R30_1"
+  )
+  (via 
+    "via0-R31_2" via0 "R31_2"
+  )
+  (via 
+    "via1-R31_2" via1 "R31_2"
+  )
+  (via 
+    "via2-R31_2" via2 "R31_2"
+  )
+  (via 
+    "via0-R32_2" via0 "R32_2"
+  )
+  (via 
+    "via1-R32_2" via1 "R32_2"
+  )
+  (via 
+    "via2-R32_2" via2 "R32_2"
+  )
+  (via 
+    "via0-U2_2" via0 "U2_2"
+  )
+  (via 
+    "via1-U2_2" via1 "U2_2"
+  )
+  (via 
+    "via2-U2_2" via2 "U2_2"
+  )
+  (via 
+    "via0-U2_7" via0 "U2_7"
+  )
+  (via 
+    "via1-U2_7" via1 "U2_7"
+  )
+  (via 
+    "via2-U2_7" via2 "U2_7"
+  )
+  (via 
+    "via0-U2_8" via0 "U2_8"
+  )
+  (via 
+    "via1-U2_8" via1 "U2_8"
+  )
+  (via 
+    "via2-U2_8" via2 "U2_8"
+  )
+  (via 
+    "via0-C26_2" via0 "C26_2"
+  )
+  (via 
+    "via1-C26_2" via1 "C26_2"
+  )
+  (via 
+    "via2-C26_2" via2 "C26_2"
+  )
+  (via 
+    "via0-C28_1" via0 "C28_1"
+  )
+  (via 
+    "via1-C28_1" via1 "C28_1"
+  )
+  (via 
+    "via2-C28_1" via2 "C28_1"
+  )
+  (via 
+    "via0-C28_2" via0 "C28_2"
+  )
+  (via 
+    "via1-C28_2" via1 "C28_2"
+  )
+  (via 
+    "via2-C28_2" via2 "C28_2"
+  )
+  (via 
+    "via0-U3_2" via0 "U3_2"
+  )
+  (via 
+    "via1-U3_2" via1 "U3_2"
+  )
+  (via 
+    "via2-U3_2" via2 "U3_2"
+  )
+  (via 
+    "via0-U3_7" via0 "U3_7"
+  )
+  (via 
+    "via1-U3_7" via1 "U3_7"
+  )
+  (via 
+    "via2-U3_7" via2 "U3_7"
+  )
+  (via 
+    "via0-U3_8" via0 "U3_8"
+  )
+  (via 
+    "via1-U3_8" via1 "U3_8"
+  )
+  (via 
+    "via2-U3_8" via2 "U3_8"
+  )
+  (via 
+    "via0-C27_2" via0 "C27_2"
+  )
+  (via 
+    "via1-C27_2" via1 "C27_2"
+  )
+  (via 
+    "via2-C27_2" via2 "C27_2"
+  )
+  (via 
+    "via0-C29_1" via0 "C29_1"
+  )
+  (via 
+    "via1-C29_1" via1 "C29_1"
+  )
+  (via 
+    "via2-C29_1" via2 "C29_1"
+  )
+  (via 
+    "via0-C29_2" via0 "C29_2"
+  )
+  (via 
+    "via1-C29_2" via1 "C29_2"
+  )
+  (via 
+    "via2-C29_2" via2 "C29_2"
+  )
+  (via_rule
+    default via0
+  )
+  (via_rule
+    A.VCC "via0-A.VCC"
+  )
+  (via_rule
+    "R4_1" "via0-R4_1"
+  )
+  (via_rule
+    A.GND "via0-A.GND"
+  )
+  (via_rule
+    "-12V" "via0--12V"
+  )
+  (via_rule
+    "U1_1" "via0-U1_1"
+  )
+  (via_rule
+    "U1_2" "via0-U1_2"
+  )
+  (via_rule
+    "SUB1-IN.L" "via0-SUB1-IN.L"
+  )
+  (via_rule
+    "BOARD-IN.L" "via0-BOARD-IN.L"
+  )
+  (via_rule
+    "U1_7" "via0-U1_7"
+  )
+  (via_rule
+    "U1_6" "via0-U1_6"
+  )
+  (via_rule
+    "SUB1-IN.R" "via0-SUB1-IN.R"
+  )
+  (via_rule
+    "BOARD-IN.R" "via0-BOARD-IN.R"
+  )
+  (via_rule
+    "REVERB-IN.R" "via0-REVERB-IN.R"
+  )
+  (via_rule
+    "REVERB-IN.L" "via0-REVERB-IN.L"
+  )
+  (via_rule
+    "REVERB-OUT.R" "via0-REVERB-OUT.R"
+  )
+  (via_rule
+    "REVERB-OUT.L" "via0-REVERB-OUT.L"
+  )
+  (via_rule
+    "VR1-IN.L" "via0-VR1-IN.L"
+  )
+  (via_rule
+    GND "via0-GND"
+  )
+  (via_rule
+    "VR1-IN.R" "via0-VR1-IN.R"
+  )
+  (via_rule
+    "VR2-IN.L" "via0-VR2-IN.L"
+  )
+  (via_rule
+    "VR2-M.L" "via0-VR2-M.L"
+  )
+  (via_rule
+    "VR2-M.R" "via0-VR2-M.R"
+  )
+  (via_rule
+    "VR2-IN.R" "via0-VR2-IN.R"
+  )
+  (via_rule
+    "A.VCC_IN" "via0-A.VCC_IN"
+  )
+  (via_rule
+    "+12V_IN" "via0-+12V_IN"
+  )
+  (via_rule
+    "-12V_IN" "via0--12V_IN"
+  )
+  (via_rule
+    +12V "via0-+12V"
+  )
+  (via_rule
+    "R1_1" "via0-R1_1"
+  )
+  (via_rule
+    "R2_1" "via0-R2_1"
+  )
+  (via_rule
+    "R3_1" "via0-R3_1"
+  )
+  (via_rule
+    "C6_2" "via0-C6_2"
+  )
+  (via_rule
+    "R12_1" "via0-R12_1"
+  )
+  (via_rule
+    "R14_1" "via0-R14_1"
+  )
+  (via_rule
+    "R13_1" "via0-R13_1"
+  )
+  (via_rule
+    "C8_1" "via0-C8_1"
+  )
+  (via_rule
+    "R15_2" "via0-R15_2"
+  )
+  (via_rule
+    "C17_1" "via0-C17_1"
+  )
+  (via_rule
+    "R16_2" "via0-R16_2"
+  )
+  (via_rule
+    "R21_1" "via0-R21_1"
+  )
+  (via_rule
+    "C17_2" "via0-C17_2"
+  )
+  (via_rule
+    "R21_2" "via0-R21_2"
+  )
+  (via_rule
+    "C13_1" "via0-C13_1"
+  )
+  (via_rule
+    "R23_2" "via0-R23_2"
+  )
+  (via_rule
+    "C20_2" "via0-C20_2"
+  )
+  (via_rule
+    "C15_1" "via0-C15_1"
+  )
+  (via_rule
+    "R26_1" "via0-R26_1"
+  )
+  (via_rule
+    "R29_2" "via0-R29_2"
+  )
+  (via_rule
+    "R28_2" "via0-R28_2"
+  )
+  (via_rule
+    "C20_1" "via0-C20_1"
+  )
+  (via_rule
+    "R28_1" "via0-R28_1"
+  )
+  (via_rule
+    "C26_1" "via0-C26_1"
+  )
+  (via_rule
+    "R30_1" "via0-R30_1"
+  )
+  (via_rule
+    "R31_2" "via0-R31_2"
+  )
+  (via_rule
+    "R32_2" "via0-R32_2"
+  )
+  (via_rule
+    "U2_2" "via0-U2_2"
+  )
+  (via_rule
+    "U2_7" "via0-U2_7"
+  )
+  (via_rule
+    "U2_8" "via0-U2_8"
+  )
+  (via_rule
+    "C26_2" "via0-C26_2"
+  )
+  (via_rule
+    "C28_1" "via0-C28_1"
+  )
+  (via_rule
+    "C28_2" "via0-C28_2"
+  )
+  (via_rule
+    "U3_2" "via0-U3_2"
+  )
+  (via_rule
+    "U3_7" "via0-U3_7"
+  )
+  (via_rule
+    "U3_8" "via0-U3_8"
+  )
+  (via_rule
+    "C27_2" "via0-C27_2"
+  )
+  (via_rule
+    "C29_1" "via0-C29_1"
+  )
+  (via_rule
+    "C29_2" "via0-C29_2"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 1.004)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class A.VCC
+    A.VCC
+    (clearance_class A.VCC)
+    (via_rule A.VCC)
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R4_1"
+    "R4_1"
+    (clearance_class "R4_1")
+    (via_rule "R4_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class A.GND
+    A.GND
+    (clearance_class A.GND)
+    (via_rule A.GND)
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "-12V"
+    "-12V"
+    (clearance_class "-12V")
+    (via_rule "-12V")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "U1_1"
+    "U1_1"
+    (clearance_class "U1_1")
+    (via_rule "U1_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "U1_2"
+    "U1_2"
+    (clearance_class "U1_2")
+    (via_rule "U1_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "SUB1-IN.L"
+    "SUB1-IN.L"
+    (clearance_class "SUB1-IN.L")
+    (via_rule "SUB1-IN.L")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "BOARD-IN.L"
+    "BOARD-IN.L"
+    (clearance_class "BOARD-IN.L")
+    (via_rule "BOARD-IN.L")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "U1_7"
+    "U1_7"
+    (clearance_class "U1_7")
+    (via_rule "U1_7")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "U1_6"
+    "U1_6"
+    (clearance_class "U1_6")
+    (via_rule "U1_6")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "SUB1-IN.R"
+    "SUB1-IN.R"
+    (clearance_class "SUB1-IN.R")
+    (via_rule "SUB1-IN.R")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "BOARD-IN.R"
+    "BOARD-IN.R"
+    (clearance_class "BOARD-IN.R")
+    (via_rule "BOARD-IN.R")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "REVERB-IN.R"
+    "REVERB-IN.R"
+    (clearance_class "REVERB-IN.R")
+    (via_rule "REVERB-IN.R")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "REVERB-IN.L"
+    "REVERB-IN.L"
+    (clearance_class "REVERB-IN.L")
+    (via_rule "REVERB-IN.L")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "REVERB-OUT.R"
+    "REVERB-OUT.R"
+    (clearance_class "REVERB-OUT.R")
+    (via_rule "REVERB-OUT.R")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "REVERB-OUT.L"
+    "REVERB-OUT.L"
+    (clearance_class "REVERB-OUT.L")
+    (via_rule "REVERB-OUT.L")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "VR1-IN.L"
+    "VR1-IN.L"
+    (clearance_class "VR1-IN.L")
+    (via_rule "VR1-IN.L")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class GND
+    GND
+    (clearance_class GND)
+    (via_rule GND)
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "VR1-IN.R"
+    "VR1-IN.R"
+    (clearance_class "VR1-IN.R")
+    (via_rule "VR1-IN.R")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "VR2-IN.L"
+    "VR2-IN.L"
+    (clearance_class "VR2-IN.L")
+    (via_rule "VR2-IN.L")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "VR2-M.L"
+    "VR2-M.L"
+    (clearance_class "VR2-M.L")
+    (via_rule "VR2-M.L")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "VR2-M.R"
+    "VR2-M.R"
+    (clearance_class "VR2-M.R")
+    (via_rule "VR2-M.R")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "VR2-IN.R"
+    "VR2-IN.R"
+    (clearance_class "VR2-IN.R")
+    (via_rule "VR2-IN.R")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "A.VCC_IN"
+    "A.VCC_IN"
+    (clearance_class "A.VCC_IN")
+    (via_rule "A.VCC_IN")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "+12V_IN"
+    "+12V_IN"
+    (clearance_class "+12V_IN")
+    (via_rule "+12V_IN")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "-12V_IN"
+    "-12V_IN"
+    (clearance_class "-12V_IN")
+    (via_rule "-12V_IN")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class +12V
+    +12V
+    (clearance_class +12V)
+    (via_rule +12V)
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R1_1"
+    "R1_1"
+    (clearance_class "R1_1")
+    (via_rule "R1_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R2_1"
+    "R2_1"
+    (clearance_class "R2_1")
+    (via_rule "R2_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R3_1"
+    "R3_1"
+    (clearance_class "R3_1")
+    (via_rule "R3_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C6_2"
+    "C6_2"
+    (clearance_class "C6_2")
+    (via_rule "C6_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R12_1"
+    "R12_1"
+    (clearance_class "R12_1")
+    (via_rule "R12_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R14_1"
+    "R14_1"
+    (clearance_class "R14_1")
+    (via_rule "R14_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R13_1"
+    "R13_1"
+    (clearance_class "R13_1")
+    (via_rule "R13_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C8_1"
+    "C8_1"
+    (clearance_class "C8_1")
+    (via_rule "C8_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R15_2"
+    "R15_2"
+    (clearance_class "R15_2")
+    (via_rule "R15_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C17_1"
+    "C17_1"
+    (clearance_class "C17_1")
+    (via_rule "C17_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R16_2"
+    "R16_2"
+    (clearance_class "R16_2")
+    (via_rule "R16_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R21_1"
+    "R21_1"
+    (clearance_class "R21_1")
+    (via_rule "R21_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C17_2"
+    "C17_2"
+    (clearance_class "C17_2")
+    (via_rule "C17_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R21_2"
+    "R21_2"
+    (clearance_class "R21_2")
+    (via_rule "R21_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C13_1"
+    "C13_1"
+    (clearance_class "C13_1")
+    (via_rule "C13_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R23_2"
+    "R23_2"
+    (clearance_class "R23_2")
+    (via_rule "R23_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C20_2"
+    "C20_2"
+    (clearance_class "C20_2")
+    (via_rule "C20_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C15_1"
+    "C15_1"
+    (clearance_class "C15_1")
+    (via_rule "C15_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R26_1"
+    "R26_1"
+    (clearance_class "R26_1")
+    (via_rule "R26_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R29_2"
+    "R29_2"
+    (clearance_class "R29_2")
+    (via_rule "R29_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R28_2"
+    "R28_2"
+    (clearance_class "R28_2")
+    (via_rule "R28_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C20_1"
+    "C20_1"
+    (clearance_class "C20_1")
+    (via_rule "C20_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R28_1"
+    "R28_1"
+    (clearance_class "R28_1")
+    (via_rule "R28_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C26_1"
+    "C26_1"
+    (clearance_class "C26_1")
+    (via_rule "C26_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R30_1"
+    "R30_1"
+    (clearance_class "R30_1")
+    (via_rule "R30_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R31_2"
+    "R31_2"
+    (clearance_class "R31_2")
+    (via_rule "R31_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "R32_2"
+    "R32_2"
+    (clearance_class "R32_2")
+    (via_rule "R32_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "U2_2"
+    "U2_2"
+    (clearance_class "U2_2")
+    (via_rule "U2_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "U2_7"
+    "U2_7"
+    (clearance_class "U2_7")
+    (via_rule "U2_7")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "U2_8"
+    "U2_8"
+    (clearance_class "U2_8")
+    (via_rule "U2_8")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C26_2"
+    "C26_2"
+    (clearance_class "C26_2")
+    (via_rule "C26_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C28_1"
+    "C28_1"
+    (clearance_class "C28_1")
+    (via_rule "C28_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C28_2"
+    "C28_2"
+    (clearance_class "C28_2")
+    (via_rule "C28_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "U3_2"
+    "U3_2"
+    (clearance_class "U3_2")
+    (via_rule "U3_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "U3_7"
+    "U3_7"
+    (clearance_class "U3_7")
+    (via_rule "U3_7")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "U3_8"
+    "U3_8"
+    (clearance_class "U3_8")
+    (via_rule "U3_8")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C27_2"
+    "C27_2"
+    (clearance_class "C27_2")
+    (via_rule "C27_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C29_1"
+    "C29_1"
+    (clearance_class "C29_1")
+    (via_rule "C29_1")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+  (class "C29_2"
+    "C29_2"
+    (clearance_class "C29_2")
+    (via_rule "C29_2")
+    (rule
+      (width 1.0)
+    )
+    (circuit 
+      (use_layer 1 2)
+    )
+  )
+)
